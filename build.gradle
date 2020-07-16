@@ -2,7 +2,6 @@ plugins {
 	id 'org.springframework.boot' version '2.3.1.RELEASE'
 	id 'io.spring.dependency-management' version '1.0.9.RELEASE'
 	id 'java'
-	id 'net.ltgt.apt-idea' version "0.15"
 }
 
 group = 'com.example'
@@ -22,10 +21,10 @@ repositories {
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	
-	compileOnly 'com.antkorwin:better-strings:0.3'
-	annotationProcessor 'com.antkorwin:better-strings:0.3'
-	testCompileOnly 'com.antkorwin:better-strings:0.3'
-	testAnnotationProcessor 'com.antkorwin:better-strings:0.3'
+	compileOnly 'com.antkorwin:better-strings:0.4'
+	annotationProcessor 'com.antkorwin:better-strings:0.4'
+	testCompileOnly 'com.antkorwin:better-strings:0.4'
+	testAnnotationProcessor 'com.antkorwin:better-strings:0.4'
 
 	testImplementation('org.springframework.boot:spring-boot-starter-test') {
 		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
