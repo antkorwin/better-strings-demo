@@ -20,16 +20,20 @@ repositories {
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+
 	
+	// annotation processor
 	compileOnly 'com.antkorwin:better-strings:0.4'
 	annotationProcessor 'com.antkorwin:better-strings:0.4'
 	testCompileOnly 'com.antkorwin:better-strings:0.4'
 	testAnnotationProcessor 'com.antkorwin:better-strings:0.4'
+	// annotation processor
+	
 
 	testImplementation('org.springframework.boot:spring-boot-starter-test') {
 		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
 	}
-	
+
 	testRuntimeOnly("org.junit.platform:junit-platform-launcher:1.6.2")
 	testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.6.2")
 	testRuntimeOnly("org.junit.vintage:junit-vintage-engine:5.6.2")
